@@ -590,7 +590,7 @@ header .btn-box .small_font{
 #weight .center{
 	text-align: left;
 	width: 70%;
-	margin:50px auto;
+	margin:50px auto 20px auto;
 }
 
 
@@ -668,7 +668,7 @@ header .btn-box .small_font{
 
 
 #comfortable .ly_cont_inner{
-	margin-top: 80px;
+	margin-top: 30px;
 	text-align: center;
 }
 
