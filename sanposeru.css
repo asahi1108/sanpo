@@ -285,7 +285,7 @@ textarea {
 　header
 ==============================*/
 .ly_head .ly_head_inner{
-	background: url(../images/sanposeru/top.png) no-repeat;
+	background: url(https://github.com/asahi1108/sanpo/blob/main/top.png?raw=true) no-repeat;
 	background-size: contain;
 	height: 785px;
 	display: flex;
