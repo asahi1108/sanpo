@@ -2,6 +2,9 @@
 /*=======================================================
 基本設定
 =======================================================*/
+.all{
+	overflow:hidden;
+}
 * {
   margin: 0;
   padding: 0;
@@ -159,7 +162,8 @@ textarea {
 .ly_head_inner,
 .ly_foot_inner,
 .ly_cont,
-.ly_cont_inner {
+.ly_cont_inner,
+.ly_cont_inner2 {
   width: 1020px;
   height: 100%;
   margin-right: auto;
@@ -229,7 +233,8 @@ textarea {
   .ly_head_inner,
   .ly_foot_inner,
   .ly_cont,
-  .ly_cont_inner {
+  .ly_cont_inner,
+  .ly_cont_inner2 {
     width: 100%;
   }
   /*各セクション見出し*/
@@ -280,7 +285,7 @@ textarea {
 　header
 ==============================*/
 .ly_head .ly_head_inner{
-	background: url(../sanposeru/top.png) no-repeat;
+	background: url(../images/sanposeru/top.png) no-repeat;
 	background-size: contain;
 	height: 760px;
 	display: flex;
@@ -315,8 +320,9 @@ textarea {
     top: -30px;
 	bottom: 10px;
 }
-.bold{
+.ly_head_inner .bold{
 	font-weight: bold;
+	color:#00b4e8;
 }
 header .btn-box .small_font{
     font-size: 10px;
@@ -371,13 +377,13 @@ header .btn-box .small_font{
 
 @media screen and (max-width: 750px){
 	#preface .ly_cont_inner{
-		height: 800px;
+		height: 960px;
 	}
 	#preface .sp_posi{
 		position: relative;
-		top: -670px;
+		top: -810px;
 		left: 60px;
-		font-size: 20px;
+		font-size: 22px;
 		margin-left: 75px;
 	}
 	#preface .el_media_imgWrapper{
@@ -390,23 +396,20 @@ header .btn-box .small_font{
 　technology
 ==============================*/
 #technology .ly_cont_inner{
-	/* background: url(../sanposeru/tech-bg.png) no-repeat; */
 	background-color:#f4fff2;
 	background-size: cover;
-	padding-top: 64px;
 }
 #technology .el_sec_mainTtl{
-	margin-left: 100px;
+	text-align: center;
 }
 #technology .tech_sub_txt{
 	font-size: 25px;
-	position: absolute;
-    right: 80px;
-    top: 110px;
+	text-align: center;
+	font-weight: bold;
 }
 #technology .rakuraku{
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	margin: 64px 0 120px;
 }
 #technology .rakuraku .el_media_imgWrapper{
@@ -423,6 +426,8 @@ header .btn-box .small_font{
 	justify-content: center;
 	align-items: center;
 	width: 400px;
+	padding: 30px;
+	margin-right: 50px;
 }
 #technology .rakuraku_txt .raku_sec_mainTtl{
 	margin-bottom: 40px;
@@ -448,19 +453,18 @@ header .btn-box .small_font{
 
 @media screen and (max-width: 750px){
 	#technology .ly_cont_inner{
-		padding-top: 64px;
+		
 	}
 	#technology .el_sec_mainTtl{
-		margin-left: 70px;
 	}
 	#technology .el_sec_mainTtl img{
 		height: 85px;
 	}
 	#technology .tech_sub_txt{
-		font-size: 18px;
-		line-height: 24px;
-		right: 40px;
-		top: 100px;
+		font-size: 28px;
+		line-height: 36px;
+		padding-top: 50px;
+		line-height: 50px;
 	}
 	#technology .rakuraku{
 		margin: 64px 0 120px;
@@ -470,7 +474,7 @@ header .btn-box .small_font{
 		margin-left: 20px;
 	}
 	#technology .rakuraku .el_media_imgWrapper img{
-		height: 360px;
+		height: 400px;
 	}
 	#technology .rakuraku_txt{
 		width: 340px;
@@ -479,10 +483,10 @@ header .btn-box .small_font{
 		margin-bottom: 30px;
 	}
 	#technology .rakuraku_txt .raku_sec_mainTtl img{
-		height: 60px;
+		height: 70px;
 	}
 	#technology .rakuraku_txt .el_txt{
-		font-size: 18px;
+		font-size: 24px;
 	}
 	/* .pow_imgWrapper{
 		right: 30px;
@@ -496,8 +500,8 @@ header .btn-box .small_font{
 　weight
 ==============================*/
 #weight .ly_cont_inner{
-	background: url(../sanposeru/weight-bg.png) no-repeat center;
-	padding-bottom: 40px;
+	background: url(../images/sanposeru/weight-bg.png) no-repeat center;
+	padding-bottom: 30px;
 }
 #weight .el_sec_mainTtl{
 	font-weight: bold;
@@ -545,6 +549,7 @@ header .btn-box .small_font{
 	flex-direction: column;
 	justify-content: center;
 	font-size: 26px;
+	text-align: center;
 }
 #weight .goo_font{
 	font-family: 'Red Hat Display', sans-serif;
@@ -553,8 +558,6 @@ header .btn-box .small_font{
 #weight .blue{
 	font-size: 20px;
 	color: blue;
-	margin-top: 10px;
-	margin-bottom: 30px;
 }
 
 #weight .small_font{
@@ -582,6 +585,26 @@ header .btn-box .small_font{
 	height: 170px;
 	margin-right: 20px;
 }
+
+#weight .smallsize{
+	width: 65%;
+}
+
+#weight .light{
+	font-size: 30px;
+	margin-top: -20px;
+}
+#weight .rice{
+	font-size: 5px;
+}
+
+#weight .center{
+	text-align: left;
+	width: 70%;
+	margin:50px auto;
+}
+
+
 
 @media screen and (max-width: 750px){
 	#weight .el_sec_mainTtl{
@@ -616,7 +639,7 @@ header .btn-box .small_font{
 	#weight .expl .el_txt{
 		font-size: 20px;
     	width: 420px;
-		margin-left: 20px;
+		text-align: center;
 	}
 	#weight .smallsize{
 		width: 70%;
@@ -646,35 +669,32 @@ header .btn-box .small_font{
 	display: flex;
 	justify-content: center;
 	margin-bottom: 54px;
-} */
-/* #comfortable .txt_center{
+}
+.txt_center{
 	text-align: center;
 } */
 
 
 #comfortable .ly_cont_inner{
-	margin-top: 50px;
-	display: flex;
-	justify-content: space-around;
+	margin-top: 80px;
+	text-align: center;
 }
+
+/* #comfortable .ly_cont_inner2{
+	display: none;
+} */
+
+
+
 
 
 
 @media screen and (max-width: 750px){
-	#comfortable .ly_cont_inner{
-		margin-top: 60px;
-		display: flex;
-		justify-content: space-around;
-	}
-	#comfortable .container{
-		width: 45%;
-		font-size: 18px;
-		text-align: center;
-		margin: 0 auto;
-	}
-	#comfortable h2{
-		padding-left: 20px;
-	}
+	
+	
+	
+
+
 }
 /*=============================
 　design
@@ -726,6 +746,19 @@ header .btn-box .small_font{
 	margin-top: 10px;
 }
 
+#cart01 .cart_price{
+	font-size: 40px;
+	line-height: 25px;
+	font-weight: bold;
+}
+#cart01 .smallest{
+	font-family:  sans-serif;
+	font-size: 14px;
+}
+#cart01 .normal{
+	font-weight: normal;
+}
+
 @media screen and (max-width: 750px){
 	#cart01 .ly_cont_inner{
 		width: 610px;
@@ -738,7 +771,18 @@ header .btn-box .small_font{
 	#cart01 .btn-box .el_btn{
 		margin-bottom: 0;
 	}
-	
+	#cart01 .cart_price{
+		font-size: 40px;
+		line-height: 25px;
+		font-weight: bold;
+	}
+	#cart01 .smallest{
+		font-family:  sans-serif;
+		font-size: 14px;
+	}
+	#cart01 .normal{
+		font-weight: normal;
+	}
 
 }
 /*=============================
@@ -748,7 +792,7 @@ header .btn-box .small_font{
 	margin-top: 64px;
 }
 #letter .ly_cont_inner{
-	background: url(../sanposeru/letter-bg.png) no-repeat center;
+	background: url(../images/sanposeru/letter-bg.png) no-repeat center;
 	padding-top: 100px;
 }
 #letter .el_sec_mainTtl{
@@ -783,7 +827,7 @@ header .btn-box .small_font{
 		padding-bottom: 60px;
 	}
 	#letter .el_sec_mainTtl{
-		font-size: 24px;
+		font-size: 36px;
 	}
 	#letter .el_media_imgWrapper{
 		padding-top: 40px;
@@ -791,7 +835,8 @@ header .btn-box .small_font{
 		margin: 0 auto;
 	}
 	#letter .el_txt{
-		font-size: 20px;
+		font-size: 30px;
+		font-weight: bold;
 	}
 }
 /*=============================
@@ -806,7 +851,7 @@ header .btn-box .small_font{
 }
 
 #cart02 .ly_cont_inner{
-	background: url(../sanposeru/cart-bg.png) no-repeat;
+	background: url(../images/sanposeru/cart-bg.png) no-repeat;
 	background-size: cover;
 	width: 680px;
 	padding: 15px 20px 15px;
@@ -828,19 +873,18 @@ header .btn-box .small_font{
 	display: flex;
 	flex-direction: column;
 }
-#cart02 .cart_body p{
-	text-align: center;
-}
+
 #cart02 .el_txt ,
 #cart02 .cart_price{
 	line-height: 1.25;
+	text-align: center;
 }
 #cart02 .small_font{
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: normal;
 }
 #cart02 .cart_price{
-	font-size: 22px;
+	font-size: 26px;
 	letter-spacing: 0.08rem;
 }
 #cart02 .mar-top{
@@ -852,10 +896,19 @@ header .btn-box .small_font{
 
 #cart02 .smallest{
     font-family:  sans-serif;
+	font-size: 14px;
+	margin-top: 30px;
+	text-align: left;
 }
 
 #cart02 .normal{
 	font-weight: normal;
+}
+
+#cart02 .cart_price{
+	font-size: 40px;
+	line-height: 25px;
+	margin-top: 30px;
 }
 
 /* 
@@ -868,11 +921,24 @@ header .btn-box .small_font{
 		width: 610px;
 	}
 	#cart02 .cart_body .el_txt{
-		font-size: 18px;
+		font-size: 24px;
 	}
 
     #cart02 .smallest{
-		font-size: 12px;
+		font-size: 14px;
+		text-align: left;
+		margin-left: 30px;
+		line-height: 18px;
+	}
+
+	#cart02 .cart_price{
+		font-size: 40px;
+		line-height: 20px;
+		margin-top: 30px;
+	}
+
+	#cart02 .tax{
+		font-size: 14px;
 	}
 }
 
